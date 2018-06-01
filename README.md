@@ -6,3 +6,5 @@ My script to download AVA2.1 dataset as of [Jun 1st, 2018].
 2. Extract the content into the 'meta' directory.
 3. Execute the python script/submit job.
 4. Done!
+
+A few minutes of your life is saved from replication efforts :).
