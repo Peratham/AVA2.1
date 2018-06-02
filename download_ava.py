@@ -11,6 +11,7 @@ dummy_url = 'https://s3.amazonaws.com/ava-dataset/trainval/[file_name]'
 dst = os.path.join('.', 'Data', 'trainval')
 if not os.path.exists(dst):
     os.makedirs(dst)
+    
 print('[Info] Downloading trainval...')
 for i, vidname in enumerate(vidlist, 1):
     vid_url = dummy_url.replace('[file_name]',vidname)
@@ -26,6 +27,7 @@ dummy_url = 'https://s3.amazonaws.com/ava-dataset/test/[file_name]'
 dst = os.path.join('.', 'Data', 'test')
 if not os.path.exists(dst):
     os.makedirs(dst)
+    
 print('[Info] Downloading test...')
 for i, vidname in enumerate(vidlist, 1):
     vid_url = dummy_url.replace('[file_name]',vidname)
