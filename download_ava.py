@@ -15,7 +15,7 @@ print('[Info] Downloading trainval...')
 for i, vidname in enumerate(vidlist, 1):
     vid_url = dummy_url.replace('[file_name]',vidname)
     print('[Info] Downloading {0}/{1}'.format(i,len(vidlist)))
-    urllib.urlretrieve (vid_url, os.path.join(dst, "{}".format(vidname)))
+    urllib.urlretrieve (vid_url, os.path.join(dst, vidname))
 
 # test vids
 with open('./meta/ava_file_names_test_v2.1.txt','rb') as fp:
@@ -30,6 +30,6 @@ print('[Info] Downloading test...')
 for i, vidname in enumerate(vidlist, 1):
     vid_url = dummy_url.replace('[file_name]',vidname)
     print('[Info] Downloading {0}/{1}'.format(i,len(vidlist)))
-    urllib.urlretrieve (vid_url, os.path.join(dst, "{}".format(vidname)))
+    urllib.urlretrieve (vid_url, os.path.join(dst, vidname))
 
 
