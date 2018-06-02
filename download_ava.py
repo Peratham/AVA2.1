@@ -6,7 +6,6 @@ import urllib
 with open('./meta/ava_file_names_trainval_v2.1.txt','rb') as fp:
     vidlist = fp.readlines()
 vidlist = [x.strip() for x in vidlist]
-
 dummy_url = 'https://s3.amazonaws.com/ava-dataset/trainval/[file_name]'
 dst = os.path.join('.', 'Data', 'trainval')
 if not os.path.exists(dst):
@@ -22,7 +21,6 @@ for i, vidname in enumerate(vidlist, 1):
 with open('./meta/ava_file_names_test_v2.1.txt','rb') as fp:
     vidlist = fp.readlines()
 vidlist = [x.strip() for x in vidlist]
-
 dummy_url = 'https://s3.amazonaws.com/ava-dataset/test/[file_name]'
 dst = os.path.join('.', 'Data', 'test')
 if not os.path.exists(dst):
