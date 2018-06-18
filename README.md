@@ -8,3 +8,6 @@ My script to download the AVA2.1 dataset as of [Jun 1st, 2018].
 4. Done!
 
 A few minutes of your life is saved from replication efforts :).
+
+# Update [Jun 18th, 2018].
+Please consider using 'download_ava_threadpool.py' as a more automated script with multithreading.
