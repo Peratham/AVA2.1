@@ -26,7 +26,6 @@ from time import time as timer
 def fetch_url(vid_url_tuple):
 	url, dst, vidname = vid_url_tuple
 	try:
-		# print('[Info] Downloading '.format(vidname))
 		urllib.urlretrieve (url, os.path.join(dst, vidname))
 		return url, None
 	except Exception as e:
